@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class MarketingServiceProvider extends ServiceProvider
 {
+    #[\Override]
     public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../../config/marketing.php', 'marketing');
