@@ -35,7 +35,7 @@ class EmailSubscriptionFormComponent extends Component
         $data = $this->validate();
 
         try {
-            MarketingLeadCreated::fire(
+            MarketingLeadCreated::commit(
                 email: $data['email'],
                 data: $data,
             );
