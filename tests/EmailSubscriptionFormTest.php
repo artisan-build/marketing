@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use ArtisanBuild\Marketing\Livewire\EmailSubscriptionFormComponent;
 use ArtisanBuild\Marketing\States\MarketingLeadState;
 use Livewire\Livewire;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ArtisanBuild\Marketing\Livewire;
 
 use ArtisanBuild\Marketing\Events\MarketingLeadCreated;
