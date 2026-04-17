@@ -20,6 +20,6 @@ class LeadExportedToMarketingPlatform extends Event
             return false;
         }
 
-        return app(ValidatesEmailAddress::class)($this->state(MarketingLeadState::class));
+        return resolve(ValidatesEmailAddress::class)($this->state(MarketingLeadState::class));
     }
 }

@@ -40,7 +40,7 @@ class MarketingLeadCreated extends Event
     public function handle(MarketingLeadState $lead): void
     {
         try {
-            app(ExportsLeadToMarketingPlatform::class)($lead);
+            resolve(ExportsLeadToMarketingPlatform::class)($lead);
         } catch (NoDriverInstalledException) {
             // This exception is expected if no driver is installed, so we ignore it.
         } catch (Exception $e) {
